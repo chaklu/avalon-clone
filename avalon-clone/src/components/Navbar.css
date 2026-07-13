@@ -1,0 +1,64 @@
+.navbar {
+  position: sticky;
+  z-index: 90;
+  height: var(--nav-h);
+  border-bottom: 1px solid var(--border)
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 32px;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar__group {
+  position: relative;
+}
+
+.navbar__group-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: transparent;
+  font-size: 13px;
+}
+
+.navbar__dropdown {
+  position: absolute;
+  min-width: 240px;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.6);
+}
+
+.navbar__dropdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+}
+
+.navbar__dropdown-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.navbar__dropdown-desc {
+  font-size: 15px;
+}
+
+.navbar__cta {
+  margin-left: auto;
+}
